@@ -9,7 +9,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 app = Flask(__name__)
 nlp = spacy.load('./output/model-best')
 
-
+# 
 
 
 def pdf_to_text(pdf_file):
