@@ -119,7 +119,11 @@ def get_data():
     x4 = calculate_similarity(cv[4],job[4])
 
     score = x0*0.3 + x1*0.2  + x3*0.2 + x4*0.3
-    return str(score)
+    data = jsonify({
+        "status":200,
+        "score":str(score)
+    })
+    return data
     
     
 
