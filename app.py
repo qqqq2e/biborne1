@@ -7,12 +7,14 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 # typing-extensions>=4.6.1
 app = Flask(__name__)
+
 nlp = spacy.load('./output/model-best')
 
 # 
 
 
 def pdf_to_text(pdf_file):
+    
     try:
         # Get the uploaded PDF file from the request
         # pdf_file = request.files['file']
