@@ -95,7 +95,9 @@ def calculate_similarity(list1,list2):
     # Return the similarity score as a JSON response
     return similarity_score  
 
-
+@app.route('/', methods=['GET'])
+def get_home():
+    return 'hi said'
 
    
 
