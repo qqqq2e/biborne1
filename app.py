@@ -5,7 +5,7 @@ import spacy
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-
+# typing-extensions>=4.6.1
 app = Flask(__name__)
 nlp = spacy.load('./output/model-best')
 
