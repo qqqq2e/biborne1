@@ -107,9 +107,9 @@ def get_home2():
 @app.route('/get_score', methods=['POST'])
 def get_data():
     
-    cv = extract_information(pdf_to_text(request.files['cv']))
-    job = extract_information(pdf_to_text(request.files['job']))
-    return cv
+    # cv = extract_information(pdf_to_text(request.files['cv']))
+    # job = extract_information(pdf_to_text(request.files['job']))
+    return pdf_to_text(request.files['cv'])
     # x0 = calculate_similarity(cv[0],job[0])
     # x1 = calculate_similarity(cv[1],job[1])
     # x2 = calculate_similarity(cv[2],job[2])
