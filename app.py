@@ -99,9 +99,12 @@ def calculate_similarity(list1,list2):
 def get_home():
     return 'hi said'
 
+@app.route('/a', methods=['GET'])
+def get_home2():
+    return 'hi said mbisd'
    
 
-@app.route('/api', methods=['POST'])
+@app.route('/get_score', methods=['POST'])
 def get_data():
 
     cv = extract_information(pdf_to_text(request.files['cv']))
