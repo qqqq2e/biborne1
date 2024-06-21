@@ -1,10 +1,10 @@
-from flask import Flask, jsonify,request
+ 
 import PyPDF2
 import json
 import spacy
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify  
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import pandas as pd
