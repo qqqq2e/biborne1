@@ -1,6 +1,5 @@
-
-
-
-Flask==2.3.2
+gunicorn==21.2.0
  
-gunicorn==19.7.1 
+Flask==2.0.1
+ 
+
