@@ -11,7 +11,7 @@ import pickle
 # typing-extensions>=4.6.1
 app = Flask(__name__)
 
-nlp = spacy.load('./output/model-best')
+ 
 
 # 
 data = pd.read_csv('./call_log_202406211525.csv')
